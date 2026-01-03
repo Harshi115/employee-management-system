@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .detail-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .detail-row {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #555;
+            width: 150px;
+        }
+        .detail-value {
+            color: #333;
+            flex: 1;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-warning {
+            background: #ffc107;
+            color: black;
+        }
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        .actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Employee Details</h1>
+
+    <div class="detail-card">
+        <div class="detail-row">
+            <div class="detail-label">Employee ID:</div>
+            <div class="detail-value">1</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Name:</div>
+            <div class="detail-value">John Doe</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Email:</div>
+            <div class="detail-value">john.doe@example.com</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Department:</div>
+            <div class="detail-value">IT</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Salary:</div>
+            <div class="detail-value">$50,000</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Joining Date:</div>
+            <div class="detail-value">January 15, 2023</div>
+        </div>
+        <div class="detail-row">
+            <div class="detail-label">Status:</div>
+            <div class="detail-value">Active</div>
+        </div>
+    </div>
+
+    <div class="actions">
+        <a href="employee-list.html" class="btn btn-secondary">← Back to List</a>
+        <a href="employee-edit.html?id=1" class="btn btn-warning">Edit</a>
+        <a href="employee-delete.html?id=1" class="btn btn-danger">Delete</a>
+    </div>
+</div>
+</body>
+</html>
