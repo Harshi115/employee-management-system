@@ -1,6 +1,6 @@
 
 name: Backend CI/CD
-
+workflow_dispatch:    
 on:
   push:
     branches: [ main, master ]
